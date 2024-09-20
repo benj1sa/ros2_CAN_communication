@@ -14,7 +14,7 @@ public:
 private:
     void timerCallback()
     {
-        RCLCPP_INFO(this->get_logger(), "Hello from ROS2")
+        RCLCPP_INFO(this->get_logger(), "Hello from CAN Communicator!");
     }
 
     rclcpp::TimerBase::SharedPtr timer_;

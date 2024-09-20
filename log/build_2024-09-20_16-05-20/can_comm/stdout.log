@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target run_comm_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o[0m
+[100%] [32m[1mLinking CXX executable run_comm_node[0m
+[100%] Built target run_comm_node
+-- Install configuration: ""
+-- Installing: /home/ubuntu/ros2_wsCAN/install/can_comm/lib/can_comm/run_comm_node
+-- Set runtime path of "/home/ubuntu/ros2_wsCAN/install/can_comm/lib/can_comm/run_comm_node" to ""
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/ament_index/resource_index/package_run_dependencies/can_comm
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/ament_index/resource_index/parent_prefix_path/can_comm
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/environment/ament_prefix_path.sh
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/environment/path.sh
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/environment/path.dsv
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/local_setup.bash
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/local_setup.sh
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/local_setup.zsh
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/local_setup.dsv
+-- Installing: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/package.dsv
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/ament_index/resource_index/packages/can_comm
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/cmake/can_commConfig.cmake
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/cmake/can_commConfig-version.cmake
+-- Up-to-date: /home/ubuntu/ros2_wsCAN/install/can_comm/share/can_comm/package.xml
