@@ -16,7 +16,7 @@ public:
     CANNode() : Node("can_communication_node")
     {
         if (system("sudo ip link set can0 up type can bitrate 1000000") != 0) {
-            RCLCPP_ERROR(this->get_logger(), "Failed to set up CAN interface");
+            RCLCPP_ERROR(this->get_logger(), "Failed to set up CAN interface - Make sure to have the CAN module plugged in!");
             return;
         }
 
@@ -50,7 +50,7 @@ public:
 
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
-            std::bind(&CANNode::send_can_message, this));
+            std::bind(&CANNode::send_periodic_message, this));
     }
 
     ~CANNode()
@@ -64,12 +64,26 @@ private:
         RCLCPP_INFO(this->get_logger(), "ping!");
     }
 
-    void send_can_message()
+    void send_periodic_message()
+    {
+        uint32_t speedControl = 5000;
+        send_can_message(speedControl);
+    }
+
+    void send_can_message(uint32_t speedControl)
     {
         struct can_frame frame;
-        frame.can_id = 0x141;
-        frame.can_dlc = 1;
-        frame.data[0] = 0xAB;
+        frame.can_id = 0x141;   // CAN ID 0x141 for RMD-X motor
+        frame.can_dlc = 8;      // Data length code
+
+        frame.data[0] = 0xA2;                           // Command byte
+        frame.data[1] = 0x00;                           // NULL
+        frame.data[2] = 0x00;                           // NULL
+        frame.data[3] = 0x00;                           // NULL
+        frame.data[4] = (uint8_t)(speedControl);        // Speed control low
+        frame.data[5] = (uint8_t)(speedControl >> 8);   // Speed control
+        frame.data[6] = (uint8_t)(speedControl >> 16);  // Speed control
+        frame.data[7] = (uint8_t)(speedControl >> 24);  // Speed control high
 
         if (write(socket_fd_, &frame, sizeof(frame)) != sizeof(frame)){
             RCLCPP_ERROR(this->get_logger(), "Failed to send CAN message");
