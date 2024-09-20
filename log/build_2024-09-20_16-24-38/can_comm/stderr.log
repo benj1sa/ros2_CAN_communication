@@ -1,0 +1,23 @@
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:[m[K In constructor ‘[01m[KCANNode::CANNode()[m[K’:
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:24:22:[m[K [01;31m[Kerror: [m[Kaggregate ‘[01m[KCANNode::CANNode()::ifreq ifr[m[K’ has incomplete type and cannot be defined
+   24 |         struct ifreq [01;31m[Kifr[m[K;
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:26:27:[m[K [01;31m[Kerror: [m[K‘[01m[KSIOCGIFINDEX[m[K’ was not declared in this scope
+   26 |         ioctl(socket_fd_, [01;31m[KSIOCGIFINDEX[m[K, &ifr);
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kioctl[m[K’ was not declared in this scope
+   26 |         [01;31m[Kioctl[m[K(socket_fd_, SIOCGIFINDEX, &ifr);
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:32:17:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kint bind(int, const sockaddr*, socklen_t)[m[K’
+   32 |         if ([01;31m[Kbind(socket_fd_, (struct sockaddr *)&addr)[m[K, sizeof(addr) < 0){
+      |             [01;31m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:4[m[K:
+[01m[K/usr/include/aarch64-linux-gnu/sys/socket.h:112:12:[m[K [01;36m[Knote: [m[Kdeclared here
+  112 | extern int [01;36m[Kbind[m[K (int __fd, __CONST_SOCKADDR_ARG __addr, socklen_t __len)
+      |            [01;36m[K^~~~[m[K
+[01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:41:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+   41 |             std::bind(&CANNode::send_can_message, this)[01;31m[K)[m[K;
+      |                                                        [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/run_comm_node.dir/build.make:76: CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/run_comm_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
