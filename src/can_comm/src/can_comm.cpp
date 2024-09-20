@@ -66,8 +66,21 @@ private:
 
     void send_periodic_message()
     {
-        uint32_t speedControl = 5000;
+        uint32_t speedControl = 900000;
         send_can_message(speedControl);
+        sleep(5);
+
+        speedControl = 000000;
+        send_can_message(speedControl);
+        sleep(5);
+
+        speedControl = -900000;
+        send_can_message(speedControl);
+        sleep(5);
+
+        speedControl = 000000;
+        send_can_message(speedControl);
+        sleep(5);
     }
 
     void send_can_message(uint32_t speedControl)

@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ros2_wsCAN/build/can_comm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_wsCAN/build/can_comm -- -j5 -l5
+Invoked command in '/home/ubuntu/ros2_wsCAN/build/can_comm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_wsCAN/build/can_comm -- -j5 -l5
