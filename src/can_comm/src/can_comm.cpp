@@ -5,19 +5,30 @@
 #include "unistd.h"
 #include "iostream"
 #include "cstring"
+#include "functional"
+#include "sys/ioctl.h"
+#include "net/if.h"
+#include "cstdlib"
 
 class CANNode : public rclcpp::Node
 {
 public:
     CANNode() : Node("can_communication_node")
     {
-        RCLCPP_INFO(this->get_logger(), "Started CANNode");
+        if (system("sudo ip link set can0 up type can bitrate 1000000") != 0) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to set up CAN interface");
+            return;
+        }
+
+        RCLCPP_INFO(this->get_logger(), "Started CAN node");
 
         // Create a CAN socket
         socket_fd_ = socket(PF_CAN, SOCK_RAW, CAN_RAW);
         if (socket_fd_ < 0) {
             RCLCPP_ERROR(this->get_logger(), "Failed to create CAN socket");
             return;
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Created CAN socket");
         }
 
         // Specify the CAN interface
@@ -29,15 +40,16 @@ public:
         struct sockaddr_can addr;
         addr.can_family = AF_CAN;
         addr.can_ifindex = ifr.ifr_ifindex;
-        if (bind(socket_fd_, (struct sockaddr *)&addr), sizeof(addr) < 0){
+        if (bind(socket_fd_, (struct sockaddr *)&addr, sizeof(addr)) < 0){
             RCLCPP_ERROR(this->get_logger(), "Failed to bind CAN socket");
             close(socket_fd_);
             return;
+        } else {
+            RCLCPP_INFO(this->get_logger(), "Binded to CAN socket to interface");
         }
 
         timer_ = this->create_wall_timer(
             std::chrono::seconds(1),
-            std::bind(&CANNode::timerCallback, this));
             std::bind(&CANNode::send_can_message, this));
     }
 

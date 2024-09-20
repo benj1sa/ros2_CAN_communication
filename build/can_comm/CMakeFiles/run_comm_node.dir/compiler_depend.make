@@ -683,8 +683,57 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
-  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+  /usr/include/linux/can.h \
+  /usr/include/linux/socket.h \
+  /usr/include/linux/can/raw.h \
+  /usr/include/aarch64-linux-gnu/sys/socket.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/aarch64-linux-gnu/bits/socket.h \
+  /usr/include/aarch64-linux-gnu/bits/socket_type.h \
+  /usr/include/aarch64-linux-gnu/bits/sockaddr.h \
+  /usr/include/aarch64-linux-gnu/asm/socket.h \
+  /usr/include/asm-generic/socket.h \
+  /usr/include/aarch64-linux-gnu/asm/sockios.h \
+  /usr/include/asm-generic/sockios.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h \
+  /usr/include/aarch64-linux-gnu/sys/ioctl.h \
+  /usr/include/aarch64-linux-gnu/bits/ioctls.h \
+  /usr/include/aarch64-linux-gnu/asm/ioctls.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/linux/ioctl.h \
+  /usr/include/aarch64-linux-gnu/asm/ioctl.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/aarch64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/aarch64-linux-gnu/sys/ttydefaults.h \
+  /usr/include/net/if.h
 
+
+/usr/include/aarch64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/aarch64-linux-gnu/bits/ioctl-types.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/aarch64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/aarch64-linux-gnu/bits/socket_type.h:
+
+/usr/include/aarch64-linux-gnu/bits/socket.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/linux/can/raw.h:
+
+/usr/include/linux/can.h:
+
+/usr/include/aarch64-linux-gnu/asm/sockios.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
@@ -723,6 +772,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/usr/include/aarch64-linux-gnu/bits/ioctls.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
@@ -1152,6 +1203,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 
 /usr/include/c++/11/bits/stl_list.h:
 
+/usr/include/aarch64-linux-gnu/sys/ioctl.h:
+
 /opt/ros/humble/include/rcutils/rcutils/allocator.h:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -1176,6 +1229,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 
 /usr/include/aarch64-linux-gnu/bits/select.h:
 
+/usr/include/net/if.h:
+
 /usr/include/c++/11/tuple:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
@@ -1187,6 +1242,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
 /usr/include/endian.h:
+
+/usr/include/aarch64-linux-gnu/asm/ioctls.h:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
@@ -1225,6 +1282,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 /usr/include/aarch64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/aarch64-linux-gnu/sys/cdefs.h:
+
+/usr/include/aarch64-linux-gnu/sys/socket.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
@@ -1424,6 +1483,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 
 /usr/include/c++/11/bits/std_function.h:
 
+/usr/include/asm-generic/sockios.h:
+
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/stdio.h:
@@ -1487,6 +1548,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 /usr/include/linux/close_range.h:
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
@@ -1782,6 +1845,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 
 /opt/ros/humble/include/rcl/rcl/service.h:
 
+/usr/include/aarch64-linux-gnu/asm/ioctl.h:
+
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
@@ -1968,6 +2033,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 
 /usr/include/math.h:
 
+/usr/include/aarch64-linux-gnu/asm/socket.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
@@ -2043,6 +2110,8 @@ CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o: /home/ubuntu/ros2_wsCAN/src/can
 /usr/lib/gcc/aarch64-linux-gnu/11/include/stdarg.h:
 
 /usr/include/c++/11/bits/specfun.h:
+
+/usr/include/linux/socket.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 

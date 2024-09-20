@@ -1,0 +1,17 @@
+[0.006s] Invoking command in '/home/ubuntu/ros2_wsCAN/build/can_comm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_wsCAN/build/can_comm -- -j5 -l5
+[0.021s] [35m[1mConsolidate compiler generated dependencies of target run_comm_node[0m
+[0.029s] [ 50%] [32mBuilding CXX object CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o[0m
+[0.836s] [01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:[m[K In constructor ‘[01m[KCANNode::CANNode()[m[K’:
+[0.836s] [01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:43:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[0.836s]    43 |             std::bind(&CANNode::timerCallback, this)[01;31m[K;[m[K
+[0.836s]       |                                                     [01;31m[K^[m[K
+[0.836s] [01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:41:41:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[0.836s]    41 |         timer_ = this->create_wall_timer[01;36m[K([m[K
+[0.836s]       |                                         [01;36m[K^[m[K
+[0.836s] [01m[K/home/ubuntu/ros2_wsCAN/src/can_comm/src/can_comm.cpp:44:56:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[0.836s]    44 |             std::bind(&CANNode::send_can_message, this)[01;31m[K)[m[K;
+[0.836s]       |                                                        [01;31m[K^[m[K
+[0.990s] gmake[2]: *** [CMakeFiles/run_comm_node.dir/build.make:76: CMakeFiles/run_comm_node.dir/src/can_comm.cpp.o] Error 1
+[0.990s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/run_comm_node.dir/all] Error 2
+[0.990s] gmake: *** [Makefile:146: all] Error 2
+[0.991s] Invoked command in '/home/ubuntu/ros2_wsCAN/build/can_comm' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_wsCAN/build/can_comm -- -j5 -l5
