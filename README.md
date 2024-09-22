@@ -16,4 +16,8 @@ For additional context and functionality, please refer to the following related 
 - **ros2_hardware_interface**: This repository contains the ROS2 hardware interface implementation.  
   Repository link: [ros2_hardware_interface](https://github.com/benj1sa/ros2_hardware_interface)
 
+## Presentation
+
+A detailed presentation for the **Team 8 Avionics** ROS2 Hardware Interface project can be found [here](https://link-to-presentation.com). This presentation covers the key aspects of our avoinics project as a whole, including goals, design decisions, and results.
+
 ---
